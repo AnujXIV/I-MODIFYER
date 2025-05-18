@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bck"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="395dp"
+        android:layout_height="306dp"
+        android:layout_above="@+id/text_display"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="70dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="387dp"
+        android:layout_height="218dp"
+        android:layout_above="@+id/capture_image_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/background_text"
+        android:maxLines="5"
+        android:text="Text wil be visible here..."
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/capture_image_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detect_text_image_btn"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:background="@drawable/button_color"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+    <Button
+        android:id="@+id/gallery_image_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detect_text_image_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/button_color"
+        android:text="Gallery"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+    <Button
+        android:id="@+id/detect_text_image_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_color"
+        android:text="Detect Text"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:ignore="ObsoleteLayoutParam,SpUsage" />
+</RelativeLayout>

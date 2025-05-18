@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/login"
+    >
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:hint="  Username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308"
+        android:background="@drawable/inputbox"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:background="@drawable/inputbox"
+        android:hint="  Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <TextView
+        android:id="@+id/tvnoAttempts"
+        android:layout_width="171dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="296dp"
+        android:text="Number of Attempts : 5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_color"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,SpUsage"
+        tools:layout_editor_absoluteY="433dp" />
+
+</android.support.constraint.ConstraintLayout>
