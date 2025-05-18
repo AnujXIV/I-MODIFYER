@@ -34,7 +34,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/I-MODIFYER.git
+git clone https://github.com/AnujXIV/I-MODIFYER.git
 ```
 
 ### 2. Open in Android Studio
